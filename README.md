@@ -2,6 +2,5 @@
 Documenting my journey of solving [HackerRank](https://www.hackerrank.com/) questions.
 
 ### 🎯 Levels Sabke Niklenge:
-- [Easy](https://github.com/5ifar/HackerRank-ing/tree/main/Easy%20Level)
-- [Medium]()
-- [Hard]()
+- [SQL](https://github.com/5ifar/HackerRank-ing/tree/main/SQL)
+
