@@ -29,3 +29,15 @@ Code:
 ```sql
 SELECT * FROM city WHERE id = 1661;
 ```
+
+### Q5. [Japanese Cities' Attributes](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true)
+Code:
+```sql
+SELECT * FROM city WHERE countrycode = 'JPN';
+```
+
+### Q6. [Japanese Cities' Names](https://www.hackerrank.com/challenges/japanese-cities-name/problem?isFullScreen=true)
+Code:
+```sql
+SELECT name FROM city WHERE countrycode = 'JPN';
+```
