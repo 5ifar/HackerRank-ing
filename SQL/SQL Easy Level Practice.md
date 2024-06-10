@@ -41,3 +41,15 @@ Code:
 ```sql
 SELECT name FROM city WHERE countrycode = 'JPN';
 ```
+
+### Q7. [Weather Observation Station 1](https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true)
+Code:
+```sql
+SELECT city, state FROM station;
+```
+
+### Q8. [Weather Observation Station 3](https://www.hackerrank.com/challenges/weather-observation-station-3/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE id % 2 = 0;
+```
