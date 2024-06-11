@@ -53,3 +53,23 @@ Code:
 ```sql
 SELECT DISTINCT(city) FROM station WHERE id % 2 = 0;
 ```
+
+### Q9. [Weather Observation Station 4](https://www.hackerrank.com/challenges/weather-observation-station-4/problem?isFullScreen=true)
+Code:
+```sql
+SELECT COUNT(city) - COUNT(DISTINCT(city)) FROM station;
+```
+
+### Q10. [Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true)
+Code:
+```sql
+(SELECT city, LENGTH(city) FROM station WHERE LENGTH(city) = (SELECT MIN(LENGTH(city)) FROM station) ORDER BY city LIMIT 1)
+UNION
+(SELECT city, LENGTH(city) FROM station WHERE LENGTH(city) = (SELECT MAX(LENGTH(city)) FROM station) ORDER BY city LIMIT 1)
+```
+Alternate Code:
+```sql
+(SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) ASC, CITY ASC LIMIT 1)
+UNION
+(SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC, CITY ASC LIMIT 1)
+```
