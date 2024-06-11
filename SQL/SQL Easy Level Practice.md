@@ -117,3 +117,9 @@ Code:
 ```sql
 SELECT DISTINCT(city) FROM station WHERE (LEFT(city, 1) NOT IN ('A', 'E', 'I', 'O', 'U')) OR (RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u'));
 ```
+
+### Q17. [Weather Observation Station 12](https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE (LEFT(city, 1) NOT IN ('A', 'E', 'I', 'O', 'U')) AND (RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u'));
+```
