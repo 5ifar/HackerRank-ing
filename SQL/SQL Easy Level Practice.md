@@ -105,3 +105,15 @@ Code:
 ```sql
 SELECT DISTINCT(city) FROM station WHERE LEFT(city, 1) NOT IN ('A', 'E', 'I', 'O', 'U');
 ```
+
+### Q15. [Weather Observation Station 10](https://www.hackerrank.com/challenges/weather-observation-station-10/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u');
+```
+
+### Q16. [Weather Observation Station 11](https://www.hackerrank.com/challenges/weather-observation-station-11/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE (LEFT(city, 1) NOT IN ('A', 'E', 'I', 'O', 'U')) OR (RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u'));
+```
