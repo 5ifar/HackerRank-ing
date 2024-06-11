@@ -93,3 +93,15 @@ Nerfed Code:
 ```sql
 SELECT DISTINCT(city) FROM station WHERE city LIKE '%a' OR city LIKE '%e' OR city LIKE '%i' OR city LIKE '%o' OR city LIKE '%u';
 ```
+
+### ✴️ Q13. [Weather Observation Station 8](https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE LEFT(city, 1) IN ("A", "E", "I", "O", "U") AND RIGHT(city, 1) IN ("a", "e", "i", "o", "u");
+```
+
+### Q14. [Weather Observation Station 9](https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE LEFT(city, 1) NOT IN ('A', 'E', 'I', 'O', 'U');
+```
