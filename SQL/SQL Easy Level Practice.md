@@ -60,16 +60,36 @@ Code:
 SELECT COUNT(city) - COUNT(DISTINCT(city)) FROM station;
 ```
 
-### Q10. [Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true)
+### ✴️ Q10. [Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true)
 Code:
 ```sql
 (SELECT city, LENGTH(city) FROM station WHERE LENGTH(city) = (SELECT MIN(LENGTH(city)) FROM station) ORDER BY city LIMIT 1)
 UNION
 (SELECT city, LENGTH(city) FROM station WHERE LENGTH(city) = (SELECT MAX(LENGTH(city)) FROM station) ORDER BY city LIMIT 1)
 ```
-Alternate Code:
+Optimized Code:
 ```sql
 (SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) ASC, CITY ASC LIMIT 1)
 UNION
 (SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC, CITY ASC LIMIT 1)
+```
+
+### Q11. [Weather Observation Station 6](https://www.hackerrank.com/challenges/weather-observation-station-6/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE LEFT(city, 1) IN ("A", "E", "I", "O", "U");
+```
+Nerfed Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE city LIKE 'A%' OR city LIKE 'E%' OR city LIKE 'I%' OR city LIKE 'O%' OR city LIKE 'U%';
+```
+
+### Q12. [Weather Observation Station 7](https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true)
+Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE RIGHT(city, 1) IN ("a", "e", "i", "o", "u");
+```
+Nerfed Code:
+```sql
+SELECT DISTINCT(city) FROM station WHERE city LIKE '%a' OR city LIKE '%e' OR city LIKE '%i' OR city LIKE '%o' OR city LIKE '%u';
 ```
