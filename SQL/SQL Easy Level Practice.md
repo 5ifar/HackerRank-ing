@@ -123,3 +123,28 @@ Code:
 ```sql
 SELECT DISTINCT(city) FROM station WHERE (LEFT(city, 1) NOT IN ('A', 'E', 'I', 'O', 'U')) AND (RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u'));
 ```
+
+### Q18. [Higher Than 75 Marks](https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true)
+Code:
+```sql
+SELECT name FROM students WHERE marks > 75 ORDER BY RIGHT(name, 3) ASC, id ASC;
+```
+
+### Q.19 [Employee Names](https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true)
+Code:
+```sql
+SELECT name FROM employee ORDER BY name ASC;
+```
+
+
+
+
+
+
+
+Template:
+### Q. []()
+Code:
+```sql
+
+```
