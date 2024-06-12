@@ -136,7 +136,23 @@ Code:
 SELECT name FROM employee ORDER BY name ASC;
 ```
 
+### Q.20 [Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true)
+Code:
+```sql
+SELECT name FROM employee WHERE salary > 2000 AND months < 10 ORDER BY employee_id ASC;
+```
 
+### ✴️ Q.21 [Type of Triangle](https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true)
+Code:
+```sql
+SELECT CASE 
+WHEN a = b AND b = c THEN "Equilateral"
+WHEN ((a = b AND b != c) OR (a = c AND c != b) OR (b = c AND c != a)) AND ((a + b) > c AND (b + c) > a AND (c + a) > b) THEN "Isosceles"
+WHEN (a != b AND b != c AND c != a) AND ((a + b) > c AND (b + c) > a AND (c + a) > b) THEN "Scalene"
+WHEN ((a + b) <= c OR (b + c) <= a OR (c + a) <= b) THEN "Not A Triangle"
+ELSE "Not A Triangle" END
+FROM triangles
+```
 
 
 
