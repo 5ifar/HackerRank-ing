@@ -154,6 +154,23 @@ ELSE "Not A Triangle" END
 FROM triangles
 ```
 
+### Q.22 [Revising Aggregations - The Count Function](https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=true)
+Code:
+```sql
+SELECT COUNT(id) FROM city WHERE population > 100000;
+```
+
+### Q.23 [Revising Aggregations - The Sum Function](https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true)
+Code:
+```sql
+SELECT SUM(population) FROM city WHERE district = "California";
+```
+
+### Q.24 [Revising Aggregations - Averages](https://www.hackerrank.com/challenges/revising-aggregations-the-average-function/problem?isFullScreen=true)
+Code:
+```sql
+SELECT AVG(population) FROM city WHERE district = "California";
+```
 
 
 
