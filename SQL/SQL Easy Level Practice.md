@@ -172,6 +172,24 @@ Code:
 SELECT AVG(population) FROM city WHERE district = "California";
 ```
 
+### Q.25 [Average Population](https://www.hackerrank.com/challenges/average-population/problem?isFullScreen=true)
+Code:
+```sql
+SELECT ROUND(AVG(population)) FROM city;
+```
+
+### Q.26 [Japan Population](https://www.hackerrank.com/challenges/japan-population/problem?isFullScreen=true)
+Code:
+```sql
+SELECT SUM(population) FROM city WHERE countrycode = "JPN";
+```
+
+### Q.27 [Population Density Difference](https://www.hackerrank.com/challenges/population-density-difference/problem?isFullScreen=true)
+Code:
+```sql
+SELECT MAX(population) - MIN(population) FROM city;
+```
+
 
 
 
