@@ -206,6 +206,21 @@ Optimised Code with CTEs:
 
 ```
 
+### Q.30 [Weather Observation Station 2](https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true)
+Code:
+```sql
+SELECT ROUND(SUM(lat_n), 2), ROUND(SUM(long_w), 2) FROM station;
+```
+
+### Q.31 [Weather Observation Station 13](https://www.hackerrank.com/challenges/weather-observation-station-13/problem?isFullScreen=true)
+Code:
+```sql
+SELECT ROUND(SUM(lat_n), 4) FROM station WHERE lat_n BETWEEN 38.7880 AND 137.2345;
+```
+
+
+
+
 
 
 Template:
