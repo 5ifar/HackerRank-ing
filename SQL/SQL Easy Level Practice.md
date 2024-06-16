@@ -218,7 +218,17 @@ Code:
 SELECT ROUND(SUM(lat_n), 4) FROM station WHERE lat_n BETWEEN 38.7880 AND 137.2345;
 ```
 
+### Q.32 [Weather Observation Station 14](https://www.hackerrank.com/challenges/weather-observation-station-14/problem?isFullScreen=true)
+Code:
+```sql
+SELECT ROUND(MAX(lat_n), 4) FROM station WHERE lat_n < 137.2345;
+```
 
+### Q.33 [Weather Observation Station 15](https://www.hackerrank.com/challenges/weather-observation-station-15/problem?isFullScreen=true)
+Code:
+```sql
+SELECT ROUND(long_w, 4) FROM station WHERE lat_n = (SELECT MAX(lat_n) FROM station WHERE lat_n < 137.2345);
+```
 
 
 
