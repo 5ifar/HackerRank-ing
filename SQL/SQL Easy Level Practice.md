@@ -242,6 +242,16 @@ Code:
 SELECT ROUND(long_w, 4) FROM station WHERE lat_n = (SELECT MIN(lat_n) FROM station WHERE lat_n > 38.7780);
 ```
 
+### Q.36 [Population Census](https://www.hackerrank.com/challenges/asian-population/problem?isFullScreen=true)
+Code:
+```sql
+SELECT SUM(ci.population) FROM city AS ci
+INNER JOIN country AS co ON ci.countrycode = co.code
+WHERE continent = "Asia";
+```
+
+
+
 
 
 Template:
