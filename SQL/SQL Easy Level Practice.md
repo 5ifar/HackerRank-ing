@@ -250,6 +250,22 @@ INNER JOIN country AS co ON ci.countrycode = co.code
 WHERE continent = "Asia";
 ```
 
+### Q.37 [African Cities](https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true)
+Code:
+```sql
+SELECT ci.name FROM city AS ci
+JOIN country AS co ON ci.countrycode = co.code
+WHERE co.continent = "Africa";
+```
+
+### Q.38 [Average Population of Each Continent](https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=true)
+Code:
+```sql
+SELECT co.continent, FLOOR(AVG(ci.population)) FROM country AS co
+JOIN city AS ci ON co.code = ci.countrycode
+GROUP BY co.continent;
+```
+
 
 
 
