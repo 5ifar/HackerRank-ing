@@ -65,6 +65,27 @@ for item in i:
     print(item, end='')
 ```
 
+### ✴️ Q7. [List Comprehensions](https://www.hackerrank.com/challenges/list-comprehensions/problem?isFullScreen=true)
+Code:
+```python
+xr = range(x+1)
+yr = range(y+1)
+zr = range(z+1)
+
+lst = [[xi, yi, zi] for xi in xr for yi in yr for zi in zr]
+filterlst = list(filter(lambda item: sum(item) != n, lst))
+print(filterlst)
+```
+
+### ✴️ Q8. [Find the Runner-Up Score!](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=true)
+Code:
+```python
+arr = list(arr)
+maxarr = max(arr)
+filterarr = list(filter(lambda item: item != maxarr, arr))
+print(max(filterarr))
+```
+
 
 
 
