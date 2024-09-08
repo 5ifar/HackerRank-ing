@@ -270,9 +270,13 @@ GROUP BY co.continent;
 
 
 
-Template:
+
+
+
+<!-- Template:
 ### Q. []()
 Code:
 ```sql
 
 ```
+-->
