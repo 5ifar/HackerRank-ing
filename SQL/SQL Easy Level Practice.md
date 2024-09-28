@@ -193,7 +193,7 @@ SELECT MAX(population) - MIN(population) FROM city;
 ### ✴️ Q.28 [The Blunder](https://www.hackerrank.com/challenges/the-blunder/problem?isFullScreen=true)
 Code:
 ```sql
-SELECT CEIL((AVG(salary) - AVG(REPLACE(salary, "0", "")))) FROM employees;
+SELECT CEIL(AVG(salary) - AVG(REPLACE(salary, 0, ''))) FROM employees;
 ```
 
 ### ✴️ Q.29 [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/problem?isFullScreen=true)
