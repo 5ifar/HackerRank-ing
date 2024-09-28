@@ -203,7 +203,10 @@ SELECT (SELECT MAX(months * salary) FROM employee), COUNT(employee_id) FROM empl
 ```
 Optimised Code with CTEs:
 ```sql
-
+WITH tet AS (
+    SELECT *, (months * salary) AS te, MAX(months * salary) OVER() AS mte FROM employee
+)
+SELECT MAX(mte), COUNT(employee_id) FROM tet WHERE te = mte
 ```
 
 ### Q.30 [Weather Observation Station 2](https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true)
