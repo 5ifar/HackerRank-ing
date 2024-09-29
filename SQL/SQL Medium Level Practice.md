@@ -18,6 +18,16 @@ Code:
 SELECT ROUND(SQRT(POWER(MAX(lat_n) - MIN(lat_n), 2) + POWER(MAX(long_w) - MIN(long_w), 2)), 4) FROM station
 ```
 
+### ✴️ Q.43 [The PADS](https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true)
+Code:
+```sql
+(SELECT CONCAT(name, '(', LEFT(occupation, 1), ')') AS nao FROM occupations)
+UNION
+(SELECT CONCAT('There are a total of ', COUNT(name), ' ', LOWER(occupation), 's.') FROM occupations GROUP BY occupation ORDER BY COUNT(name) ASC, occupation ASC)
+ORDER BY nao ASC
+```
+
+
 
 <!-- Template:
 ### Q. []()
