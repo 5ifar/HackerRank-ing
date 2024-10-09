@@ -86,8 +86,34 @@ filterarr = list(filter(lambda item: item != maxarr, arr))
 print(max(filterarr))
 ```
 
+### Q9. [Finding the percentage](https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true)
+Code:
+```python
+stdmarks = student_marks[query_name]
+print(format(sum(stdmarks)/len(stdmarks), ".2f"))
+```
 
-
+### ✴️ Q10. [Lists](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
+Code:
+```python
+list = []
+for i in range(N):
+    command = input().split()
+    if 'insert' in command:
+        list.insert(int(command[1]), int(command[2]))
+    elif 'print' in command:
+        print(list)
+    elif 'remove' in command:
+        list.remove(int(command[-1]))
+    elif 'append' in command:
+        list.append(int(command[-1]))
+    elif 'sort' in command:
+        list.sort()
+    elif 'pop' in command:
+        list.pop()
+    else:
+        list.reverse()
+```
 
 
 
