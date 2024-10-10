@@ -142,6 +142,23 @@ def swap_case(s):
     return ss
 ```
 
+### ✴️ Q13. [Nested Lists](https://www.hackerrank.com/challenges/nested-list/problem?isFullScreen=true)
+Code:
+```python
+if __name__ == '__main__':
+    stdscore = []
+    scores = set()
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        stdscore.append([name, score])
+        scores.add(score)
+stdscore.sort(key=lambda data: data[0])
+for i in range(len(stdscore)):
+    if stdscore[i][1] == sorted(scores)[1]:
+        print(stdscore[i][0])
+```
+
 
 
 
