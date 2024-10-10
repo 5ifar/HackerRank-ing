@@ -115,6 +115,33 @@ for i in range(N):
         list.reverse()
 ```
 
+### Q11. [Tuples](https://www.hackerrank.com/challenges/python-tuples/problem?isFullScreen=true)
+Code:
+```python
+ipt = tuple(integer_list)
+print(hash(ipt))
+```
+
+### Q12. [sWAP cASE](https://www.hackerrank.com/challenges/swap-case/problem?isFullScreen=true)
+Function Code:
+```python
+def swap_case(s):
+    return s.swapcase()
+```
+
+Manual Code:
+```python
+def swap_case(s):
+    ss = ''
+    for i in s:
+        if i.isupper():
+            i = i.lower()
+        else:
+            i = i.upper()
+        ss = ss + i
+    return ss
+```
+
 
 
 
